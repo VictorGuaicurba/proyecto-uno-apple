@@ -8,7 +8,7 @@
 body{
     background-color: white;
     display: block;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.5;
     font-size: 17px;
     letter-spacing: -.022em;
@@ -17,46 +17,41 @@ body{
 
 /*Menu*/
 
-nav{
+header{
+    position: fixed;
     display: flex;
-    height: 50px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
+    height: 45px;
+    align-items:center;
+    justify-content: space-around;
     background-color: rgba(22, 22, 23, .99);
+    z-index: 100;
 }
 
-.icon_apple{
-    color: rgba(255, 255, 255, .2);
-    font-size: 25px;
-}
-
-nav ul{
+header ul{
     display: flex;
-}
-
-nav ul{
     text-decoration: none;
     list-style: none;
 }
 
-nav ul li a{
-    padding: 32px;
-    font-size: 13px;
+header ul li a{
+    padding: 37px;
+    font-size: 14px;
     color: rgba(255, 255, 255, .8);
     text-decoration: none;
     list-style: none;
     font-family: inherit;
 }
 
-nav ul li a:hover{
+header ul li a:hover{
     color: whitesmoke;
 }
 
+.icon_apple{
+    font-size: 25px;
+}
 .icon-search{
-    color: rgba(255, 255, 255, .8);;
-    font-size: 20px;
-    margin: 13px;
+    font-size: 23px;
 }
 i{
     color: rgba(255, 255, 255, .8);;
@@ -87,34 +82,25 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     transform: translate(-50%,-50%);
 }
-.subtitle_ipad{
-    position: absolute;
-    color: aliceblue;
-    top: 24%;
-    left: 51%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 38px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    transform: translate(-50%,-50%);
+.separate-line{
+    margin-top: 10px;
+    line-height: 0.8;
 }
+
 .information{
     position: absolute;
     color: gray;
-    top: 24.5%;
     left: 50%;
     font-size: 27px;
     transform: translate(-50%,-50%);
 }
-.information_ipad{
-    position: absolute;
-    color: gray;
-    top: 29%;
-    left: 51%;
-    font-size: 30px;
-    transform: translate(-50%,-50%);
+.information-primary{
+    top: 26%;
 }
+.information_secundary{
+    top: 29%;
+}
+
 .link{
     display: flex;
     position: absolute;
@@ -129,13 +115,10 @@ h2{
     margin-top: 25px;
     padding: 11px;
 }
-.ipad{
-    top: 31%;
-}
-.comprar{
+
+.buttom-buy{
     display: flex;
     position: absolute;
-    top: 27%;
     left: 53%;
     color: whitesmoke;    
     font-size: 20px;
@@ -146,46 +129,39 @@ h2{
     margin-top: 25px;
     padding: 11px;
 }
-.comprar:hover{
+.buttom-buy:hover{
     background-color: #0071e3;
 }
-.Ipad{
-    top: 31%;
+.buttom-primary{
+    top: 27%;
 }
-.img_galery1{
-    object-fit: cover;
-    width: 100%;
-    display: inline-block;
+.buttom-secundary{
+    top: 30%;
 }
 
-.img_galery1 img{
+img{
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-/*Imagen Macbook*/
-.container_image{
-    position: relative;
+.img_galery1{
+    width: 100%;
     display: inline-block;
-    object-fit: cover;
+
+}
+
+.container{
+    position: relative;
     width: 100%;
     text-align: center;
 }
 
-/*Imagen iPad y Iphone*/
-.container-image2{
-    position: relative;
-    display: inline-block;
-    object-fit: cover;
-    width: 100%;
-    text-align: center;
+.separation{
     padding-top: 7px;
 }
 
 /*Segunda parte*/
-img{
-    width: 100%;
-    object-fit: cover;
-}
 .img_galery2{
     width: 100%;
     max-width: 100%;
@@ -196,14 +172,7 @@ img{
     grid-auto-rows: 800px;
     gap: 20px;
 }
-.img_galery2 img {
-    height: 100%;
-}
-.container1{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
+
 .titulo_img{
     position: absolute;
     display: inline-block;
@@ -358,9 +327,7 @@ h3{
     flex-direction: row;
     align-content: center;
     overflow-x: auto;
-}
 
-.img_peliculas{
     overflow: hidden;
     width: 100%;
 }
